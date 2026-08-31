@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ludo Game Board</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .board {
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            border: 3px solid black;
+            border-collapse: collapse;
+        }
+
+        .board td {
+            border: 2px solid black;
+            width: 33%;
+            height: 120px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .path {
+            background-color: white;
+        }
+
+        .center {
+            background-color: orange;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .token {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid black;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .token-red { background-color: red; }
+        .token-green { background-color: green; }
+        .token-blue { background-color: blue; }
+        .token-yellow { background-color: yellow; }
+
+        .dice-section {
+            margin-top: 30px;
+        }
+
+        .dice {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: white;
+            font-size: 24px;
+            line-height: 50px;
+            margin: 10px auto;
+        }
+
+        .players {
+            margin-top: 20px;
+        }
+
+        .players p {
+            margin: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>LUDO Game</h1>
+
+    <!-- Ludo Board -->
+    <table class="board">
+        <tr>
+            <td class="red">
+                <div class="token token-red"></div>
+                <div class="token token-red"></div>
+                <br>
+                <div class="token token-red"></div>
+                <div class="token token-red"></div>
+            </td>
+            <td class="path">Path</td>
+            <td class="green">
+                <div class="token token-green"></div>
+                <div class="token token-green"></div>
+                <br>
+                <div class="token token-green"></div>
+                <div class="token token-green"></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="path">Path</td>
+            <td class="center">WIN</td>
+            <td class="path">Path</td>
+        </tr>
+        <tr>
+            <td class="blue">
+                <div class="token token-blue"></div>
+                <div class="token token-blue"></div>
+                <br>
+                <div class="token token-blue"></div>
+                <div class="token token-blue"></div>
+            </td>
+            <td class="path">Path</td>
+            <td class="yellow">
+                <div class="token token-yellow"></div>
+                <div class="token token-yellow"></div>
+                <br>
+                <div class="token token-yellow"></div>
+                <div class="token token-yellow"></div>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Dice Section -->
+    <div class="dice-section">
+        <h3>Dice</h3>
+        <div class="dice">6</div>
+    </div>
+
+    <!-- Player Names -->
+    <div class="players">
+        <h3>Players</h3>
+        <p>Player 1 - Red</p>
+        <p>Player 2 - Green</p>
+        <p>Player 3 - Blue</p>
+        <p>Player 4 - Yellow</p>
+    </div>
+
+</body>
+</html>

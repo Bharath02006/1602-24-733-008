@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Categorized Course Lists</title>
+</head>
+<body>
+
+    <table border="1" cellpadding="10">
+        <tr>
+            <td><b>Programming Languages</b></td>
+            <td><b>Data Structures</b></td>
+            <td><b>Software Engineering Topics</b></td>
+        </tr>
+        <tr>
+            <td colspan="3"><hr></td>
+        </tr>
+        <tr>
+            <td>
+                <select>
+                    <option>C</option>
+                    <option>C++</option>
+                    <option>Java</option>
+                    <option>Python</option>
+                </select>
+            </td>
+            <td>
+                <select>
+                    <option>A. Array</option>
+                    <option>B. Linked List</option>
+                    <option>C. Stack</option>
+                    <option>D. Queue</option>
+                </select>
+            </td>
+            <td>
+                <input list="software-engineering">
+                <datalist id="software-engineering">
+                    <option value="101. SDLC"></option>
+                    <option value="102. Agile Model"></option>
+                    <option value="103. Waterfall Model"></option>
+                    <option value="104. UML Diagrams"></option>
+                    <option value="105. Testing Techniques"></option>
+                </datalist>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
