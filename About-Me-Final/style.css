@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    color: #222;
+}
+
+.profile-card {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    padding: 45px;
+    background: #1f2937;
+    color: white;
+}
+
+.profile-image img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.header-content h1 {
+    margin: 0 0 8px;
+    font-size: 38px;
+}
+
+.header-content h3 {
+    margin: 0 0 15px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.header-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+section {
+    padding: 25px 45px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #1f2937;
+    border-left: 5px solid #1f2937;
+    padding-left: 12px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    padding: 9px 16px;
+    background: #e8edf3;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+.project {
+    background: #f5f7fa;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.education-box {
+    background: #f5f7fa;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+.education-box h3 {
+    margin-top: 0;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #1f2937;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2937;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    section {
+        padding: 22px 25px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+}
